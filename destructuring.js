@@ -22,8 +22,7 @@ var carDetails = {
 */
 
 //Code Here
-
-
+let { color, make, model, year } = carDetails;
 
 ////////// PROBLEM 2 //////////
 
@@ -33,9 +32,9 @@ var carDetails = {
   The property names are firstName, lastName, and title.
 */
 
-function greeting( obj ) {
-  //Code Here
-  
+function greeting(obj) {
+  let { firstName, lastName, title } = obj //Code Here
+
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -54,7 +53,11 @@ function greeting( obj ) {
 */
 
 //Code Here
+function totalPopulation(obj) {
+  let { utah, california, texas, arizona } = obj
+  return utah + california + texas + arizona
 
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -69,7 +72,13 @@ function greeting( obj ) {
 
 //Code Here
 
+function ingredients(obj) {
+  let { carb, fat, protein } = obj;
 
+  return [carb, fat, protein];
+
+}
+console.log(newIngredients);
 
 ////////// PROBLEM 5 //////////
 
@@ -87,6 +96,23 @@ function greeting( obj ) {
 
 //Code Here
 
+function largeNumbers(obj) {
+  let = { first, second, third } = obj
+  let arr = [first, second, third]
+  let lowestVal = arr[0];
+
+  for (i = 0; i < arr.length; i++) {
+    let curVal = arr[i];
+
+    if (curVal < lowestVal) {
+      lowestVal = curVal
+
+    }
+  }
+  return lowestVal;
+}
+
+
 
 
 ////////// PROBLEM 6 //////////
@@ -98,5 +124,24 @@ function greeting( obj ) {
 */
 
 //Code Here
+
+function numberGroups(obj) {
+  let = { a, b, c } = obj;
+  let arr = [a, b, c]
+  let highArr = arr[0].length
+  let index;
+  for (i = 0; i < arr.length; i++) {
+    let currArr = arr[i].length
+
+    if (currArr > highArr) {
+      highArr = currArr
+      index = i
+    }
+  }
+  return arr[index];
+
+}
+
+
 
 
